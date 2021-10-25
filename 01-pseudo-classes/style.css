@@ -1,12 +1,12 @@
-p:first-child{
+.primeiro p:first-child{
     color: brown;
     background-color: cornflowerblue;
 } /**vai estilizar só o primeiro paragrafo de cada (div)**/
-p:last-child{
+.ultimo p:last-child{
     color: darkgoldenrod;
     background-color: darkgreen;
 }/**vai estilizar a ultima linha de cada div**/
-p:not(.padrao){
+.padrao p:not(.padrao){
     color: yellow;
 }
 div{
@@ -14,35 +14,35 @@ div{
     padding: 30px;
 
 }
-.impar:nth-child(odd){/**usada para estilizar somente irmãos imapres**/
+.impar li:nth-child(odd){/**usada para estilizar somente irmãos imapres**/
     color:red;
 } 
 
-.par:nth-child(even){/**estiliza somente irmãos pares**/
+.par li:nth-child(even){/**estiliza somente irmãos pares**/
     width: 30px;
     color: blue;
     background-color:burlywood;
 }
-.tres-n:nth-child(3n){/**estilia de 3 em 3 ou o valor que seja atribuido**/
+.tres-n li:nth-child(3n){/**estilia de 3 em 3 ou o valor que seja atribuido**/
     width: 218px;
     color:green;
     background-color: yellow;
          
 }
 
-.d-s{
+.d-s li{
     list-style: none;
     margin: 5px;
     font-weight: bold;
 }
-.d-s:nth-child(n+2):nth-child(-n+7){/**estiliza de um ponto especifico a outro**/
+.d-s li:nth-child(n+2):nth-child(-n+7){/**estiliza de um ponto especifico a outro**/
     background-color: tomato;
     color: white;
     width: 40px;
     
     
 }
-.l-c:nth-last-child(2){/**estiliza apartir do ultimo elemento**/
+.l-c li:nth-last-child(2){/**estiliza apartir do ultimo elemento**/
     color: yellow;
 
 }
